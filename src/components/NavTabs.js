@@ -19,58 +19,12 @@ function NavTabs({ currentPage, handlePageChange }) {
     <div className="navbar-menu">
       <div className="navbar-end">
           <a href="#about"  onClick={() => handlePageChange('About')} className="navbar-item">About</a>
-          <a href="#work" onClick={() => handlePageChange('Work')} className="navbar-item">Work</a>
+          <a href="#work" onClick={() => handlePageChange('Project')} className="navbar-item">Work</a>
           <a href="#contact" onClick={() => handlePageChange('Contact')} className="navbar-item">Contact</a>
       </div>
     </div>  
     </div>
   </nav>
-    // <ul className="nav nav-tabs">
-    //   <li className="nav-item">
-    //     <a
-    //       href="#home"
-    //       onClick={() => handlePageChange('Home')}
-    //       //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
-
-    //       className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-    //     >
-    //       Home
-    //     </a>
-    //   </li>
-    //   <li className="nav-item">
-    //     <a
-    //       href="#about"
-    //       onClick={() => handlePageChange('About')}
-    //       //  TODO: Add a comment explaining what this logic is doing
-
-    //       className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-    //     >
-    //       About
-    //     </a>
-    //   </li>
-    //   <li className="nav-item">
-    //     <a
-    //       href="#blog"
-    //       onClick={() => handlePageChange('Blog')}
-    //       //  TODO: Add a comment explaining what this logic is doing
-
-    //       className={currentPage === 'Blog' ? 'nav-link active' : 'nav-link'}
-    //     >
-    //       Blog
-    //     </a>
-    //   </li>
-    //   <li className="nav-item">
-    //     <a
-    //       href="#contact"
-    //       //  TODO: Add a comment explaining what this logic is doing
-
-    //       onClick={() => handlePageChange('Contact')}
-    //       className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-    //     >
-    //       Contact
-    //     </a>
-    //   </li>
-    // </ul>
   );
 }
 
