@@ -2,21 +2,58 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+<div class="container box p-6 has-background-light">
+      <h1 class="title has-text-centered">
+        Contact Me
+      </h1>
+      <h2 class="subtitle has-text-centered">
+        Please fill out the form to get in touch...
+      </h2>
+      <form action="">
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text"
+                   placeholder="Enter your name" />
+          </div>
+        </div>  
+
+  
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-danger" type="email" placeholder="Enter your email"/>
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </div>
+        </div>
+  
+        <div class="field">
+          <label class="label">
+            Message...
+          </label>
+          <div class="control">
+            <textarea
+              class="textarea"
+              placeholder="Please enter your message here!"
+            ></textarea>
+          </div>
+        </div> 
+
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-success">
+              Sign up
+            </button>
+          </div>
+          <div class="control">
+            <button class="button is-link is-light">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
   );
 }

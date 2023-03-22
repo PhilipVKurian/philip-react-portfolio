@@ -6,6 +6,7 @@ export default function About() {
   <article className="article" id="about">
     <aside className="heading">
         <h1>About</h1>
+        <img src="https://icons.iconarchive.com/icons/google/noto-emoji-people-face/256/10138-boy-medium-dark-skin-tone-icon.png" alt="placeholder" style={{width: "100px", height: "100px"}}/>
     </aside>
     <section className="content">
         <p>I'm an aspiring web developer with many ideas. I've been facinated by computers and how they work since I was a young and this has led me to pursue a career in web development.</p>
